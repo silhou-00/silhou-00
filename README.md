@@ -1,8 +1,6 @@
 <h1 align="center">Hi 👋, I'm Mathew Angelo Balanlay</h1>
 <h3 align="center">Third Year Student at University of Makati pursuing BS Information Technology</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=silhou-00&label=Profile%20views&color=0e75b6&style=flat" alt="silhou-00" /> </p>
-
 - 🔭 I’m currently working on **Audit System**
 - 🌱 I’m currently learning **Networking & Cybersecurity Courses**
 
