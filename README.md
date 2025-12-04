@@ -19,7 +19,7 @@
 <div align="center">
   <h2> My Contributions </h2>
   <br>
-  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/salesp07/salesp07/output/github-contribution-grid-snake.svg" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=silhou-00&theme=react-dark&bg_color=0D1117&hide_border=true" alt="silhou-00's Activity Graph" />
   
   <br/><br/><br/>
 </div>
