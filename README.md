@@ -21,5 +21,5 @@
   
   <br/><br/>
 
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=silhou-00&theme=react-dark&bg_color=0D1117&hide_border=true" alt="silhou-00 graph" />
+  <img src="https://github-readme-stats.vercel.app/api?username=silhou-00&hide=contribs,prs" alt="silhou-00 graph" />
 </div>
