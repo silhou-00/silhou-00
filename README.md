@@ -46,12 +46,12 @@ I automate pipelines so teams ship faster without losing security. Currently bui
 <br/>
 
 <p align="center">
-  <img width="100%" src="https://ghchart.rshah.org/2f81f7/silhou-00" alt="Contribution heatmap"/>
+  <img width="100%" src="https://raw.githubusercontent.com/silhou-00/silhou-00/output/github-snake.svg" alt="Contribution snake"/>
 </p>
 <p align="center">
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=silhou-00&theme=github_dark" alt="Commits and PRs"/>
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=silhou-00&theme=github_dark&utcOffset=8" alt="Commits by hour"/>
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=silhou-00&theme=github_dark&border_color=00000000" alt="Commits and PRs"/>
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=silhou-00&theme=github_dark&utcOffset=8&border_color=00000000" alt="Commits by hour"/>
 </p>
 <p align="center">
-  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=silhou-00&theme=github_dark" alt="Profile details"/>
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=silhou-00&theme=github_dark&border_color=00000000&name=Mathew%20Angelo%20Balanlay" alt="Profile details"/>
 </p>
