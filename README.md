@@ -39,9 +39,9 @@ I automate pipelines so teams ship faster without losing security. Currently bui
 
 ### Honors
 
-- 🏆 **AWS Innovation Cup 2025**: Champion, Well-Architected Builder, Best Agora Solution
-- 🥇 **Ship or Be Shipped 2025**: Top 5 finalist of 80, bounty winner
-- 🎯 **Breaking Enigma 2025**: Top 30 hackathon qualifier
+- **AWS Innovation Cup 2025**: Champion, Well-Architected Builder, Best Agora Solution
+- **Ship or Be Shipped 2025**: Top 5 finalist of 80, bounty winner
+- **Breaking Enigma 2025**: Top 30 hackathon qualifier
 
 <br/>
 
