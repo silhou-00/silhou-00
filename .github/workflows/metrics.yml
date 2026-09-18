@@ -1,0 +1,38 @@
+name: Generate metric cards
+
+on:
+  schedule:
+    - cron: "0 1 * * *" # daily at 09:00 PH time
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.SNAKE_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          THEME: github_dark
+          UTC_OFFSET: 8
+          NAME: Mathew Balanlay
+          AUTO_PUSH: false
+
+      - name: Remove card borders
+        run: sed -i 's/stroke="#2e343b"/stroke="none"/' profile-summary-card-output
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile-summary-card-output
+          git diff --staged --quiet || git commit -m "Update metric cards"
+          git push
