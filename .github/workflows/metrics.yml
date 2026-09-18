@@ -27,7 +27,9 @@ jobs:
           AUTO_PUSH: false
 
       - name: Remove card borders
-        run: sed -i 's/stroke="#2e343b"/stroke="none"/' profile-summary-card-output
+        run: |
+          sudo chown -R "$(id -u):$(id -g)" profile-summary-card-output
+          sed -i 's/stroke="#2e343b"/stroke="none"/' profile-summary-card-output/github_dark/*.svg
 
       - name: Commit cards
         run: |
