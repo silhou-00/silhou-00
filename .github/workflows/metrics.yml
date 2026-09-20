@@ -26,10 +26,33 @@ jobs:
           NAME: Mathew Balanlay
           AUTO_PUSH: false
 
-      - name: Remove card borders
+      - name: Restyle cards
         run: |
           sudo chown -R "$(id -u):$(id -g)" profile-summary-card-output
-          sed -i 's/stroke="#2e343b"/stroke="none"/' profile-summary-card-output/github_dark/*.svg
+          python3 - <<'PY'
+          import glob
+          BODY = "Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif"
+          TITLE = "ui-monospace, 'SFMono-Regular', 'Cascadia Mono', Consolas, monospace"
+          OLD = """* {
+                    font-family: 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif
+                  }"""
+          NEW = ("* { font-family: " + BODY + " }"
+                 " text[style*='22px'] { font-family: " + TITLE
+                 + "; letter-spacing: .04em; font-weight: 600 }")
+          SUBS = [
+              (OLD, NEW),
+              ('stroke="#2e343b"', 'stroke="none"'),  # card border
+              ("#0366d6", "#e6edf3"),                 # titles: blue -> near-white
+              ("#8b949e", "#9198a1"),                 # labels and icons
+              ("#40c463", "#39d353"),                 # charts -> snake green
+              ("#77909c", "#6e7681"),                 # chart axes
+          ]
+          for f in glob.glob("profile-summary-card-output/github_dark/*.svg"):
+              s = open(f, encoding="utf-8").read()
+              for a, b in SUBS:
+                  s = s.replace(a, b)
+              open(f, "w", encoding="utf-8").write(s)
+          PY
 
       - name: Commit cards
         run: |
